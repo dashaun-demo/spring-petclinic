@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 class CrashController {
 
-	@GetMapping("/oups")
+	@GetMapping({"/oups", "/oups/"})
 	public String triggerException() {
 		throw new RuntimeException(
 				"""
